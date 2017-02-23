@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 
 import { appRoutes} from './routes';
 
+import { MoviesService } from './services/movies.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,7 @@ import { appRoutes} from './routes';
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [ MoviesService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
