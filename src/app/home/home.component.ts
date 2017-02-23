@@ -7,12 +7,17 @@ import { MoviesService } from '../services/movies.service';
 })
 export class HomeComponent implements OnInit {
   latestMovie: any
+  popularMovies: any[]
+  poster: String = "https://image.tmdb.org/t/p/w500"
+
   constructor(private moviesServices: MoviesService) { }
 
   ngOnInit() {
     this.moviesServices.getLatestMovie().subscribe(data => {
       this.latestMovie = data
-      console.log(this.latestMovie)
+    })
+    this.moviesServices.getMostPopular().subscribe((data: any) => {
+      this.popularMovies = data.results
     })
   }
 

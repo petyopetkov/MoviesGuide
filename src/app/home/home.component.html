@@ -1,1 +1,5 @@
+<h1 class="jumbotron text-center">Welcome to Movie Guide</h1>
 <h2>{{latestMovie?.title}}</h2>
+<div *ngFor="let movie of popularMovies">
+    <img [src]="poster + movie?.poster_path" alt="">
+</div>
