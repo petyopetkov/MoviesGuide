@@ -1,5 +1,9 @@
 <h1 class="jumbotron text-center">Welcome to Movie Guide</h1>
 <h2>{{latestMovie?.title}}</h2>
-<div *ngFor="let movie of popularMovies">
-    <img [src]="poster + movie?.poster_path" alt="">
+<div class="row">
+    <div style="margin: 10px" class="col-md-2 panel panel-default" *ngFor="let movie of popularMovies">
+        <div class="panel-body">
+            <img [src]="IMG_BASE_URL + movie?.poster_path" alt="">
+        </div>
+    </div>
 </div>

@@ -8,7 +8,7 @@ import { MoviesService } from '../services/movies.service';
 export class HomeComponent implements OnInit {
   latestMovie: any
   popularMovies: any[]
-  poster: String = "https://image.tmdb.org/t/p/w500"
+  IMG_BASE_URL: String = "https://image.tmdb.org/t/p/w500"
 
   constructor(private moviesServices: MoviesService) { }
 
