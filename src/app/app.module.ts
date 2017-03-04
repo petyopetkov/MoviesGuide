@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
+import { JQ_TOKEN } from './common/jQuery.service'
+
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
@@ -11,6 +13,8 @@ import { HomeComponent } from './home/home.component';
 import { appRoutes} from './routes';
 
 import { MoviesService } from './services/movies.service';
+
+declare let jQury: any;
 
 @NgModule({
   declarations: [
