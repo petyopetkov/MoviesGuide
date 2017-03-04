@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, Inject } from '@angular/core';
+//import { JQ_TOKEN } from '../common/jQuery.service';
+//import * as $ from 'jquery';
 
 @Component({
   selector: 'app-nav-bar',
@@ -12,4 +14,10 @@ export class NavBarComponent implements OnInit {
   ngOnInit() {
   }
 
+  // ngAfterViewInit(){
+  //   $('.navbar-nav li a').click(function(){
+  //     $(this).addClass('active');
+  //   })
+  // }
+  
 }

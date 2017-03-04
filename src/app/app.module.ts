@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
-import { JQ_TOKEN } from './common/jQuery.service'
+//import { JQ_TOKEN } from './common/index';
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
@@ -13,14 +13,16 @@ import { HomeComponent } from './home/home.component';
 import { appRoutes} from './routes';
 
 import { MoviesService } from './services/movies.service';
+import { PopularMoviesComponent } from './movies/popular-movies/popular-movies.component';
 
-declare let jQury: any;
+//declare let jQuery: Object;
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    HomeComponent
+    HomeComponent,
+    PopularMoviesComponent
   ],
   imports: [
     BrowserModule,
